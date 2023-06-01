@@ -31,7 +31,7 @@ jobs:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
         ECR_REPOSITORY: docker-assignment
         IMAGE_TAG: v0.1
-        IMAGE_TAGSQL: v0.2
+        IMAGE_TAGSQL: v1.0
       run: |
        cd docker/
        ls -ltra
@@ -39,7 +39,7 @@ jobs:
         docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG -f Dockerfile .
         
           # Docker build mysql image command
-        docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAGSQL  -f Dockerfile_mysql .
+        docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAGSQL -f Dockerfile_mysql .
         
         # Unit test
         # docker run -d -p 80:8080 --name nodeapp $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAGSQL
