@@ -35,7 +35,7 @@ jobs:
        cd docker/
        ls -ltra
         # Docker build command
-        docker build -t -f Dockerfile $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
+        docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG -f Dockerfile .
         # Unit test
         # docker run -d -p 80:8080 --name nodeapp $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
         docker ps
