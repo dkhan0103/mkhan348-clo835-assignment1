@@ -14,7 +14,7 @@ This assignment is done  Asif Raja
 
 
 
-## Using Terraform to Deploy 4 webserver in public subnet and 2 in private subnet
+## Using Terraform to EC2 instance in public subnet. 
 
 Instructions on using Terraform to deploy EC2 instance.
 
