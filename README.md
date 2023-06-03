@@ -3,7 +3,7 @@
 
 This assignment is done  Asif Raja
 
-## Assignment1 Title:
+## Assignment 1 Title:
 
 ## Create Dockerfile, build docker image and deploy docker container on Amazon Linux EC2  
 
@@ -21,7 +21,7 @@ Instructions on using Terraform to deploy EC2 instance.
 - Clone the repo in your local machine 
  Use below command 
 - git init 
-- git clone https://github.com/dkhan0103/acsproject.git
+- git clone https://github.com/brtasif/clo835-assignment1.git
 - Go to terraform_code/dev/instances/ directory and follow the steps 
 - terrafrom init # initialize terrform
 - terraform fmt
