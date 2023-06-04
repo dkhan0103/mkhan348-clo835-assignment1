@@ -7,7 +7,7 @@
 #
 #----------------------------------------------------------
 
-#  Define the provider
+#  Define the provider test
 provider "aws" {
   region = "us-east-1"
 }
